@@ -1,0 +1,32 @@
+import sys, time
+from time import sleep
+sys.stdout.flush()
+sleep(1)
+
+#dialouge
+
+#function print1by1 
+def print1by1(text, delay=0.1):
+    for c in text:
+        sys.stdout.write(c) #prints the number of letters within text
+        sys.stdout.flush() #writes everything in the buffer
+        time.sleep(delay)
+    print
+
+print1by1("hey there friend...") #calls function print1by1
+wait = input("Press Enter to continue.")
+sleep(1)
+
+print1by1("uhh i dont really see a name tag sooo... whats your name?")
+name = input("your name? ")
+sleep(1)
+
+print1by1("so uhh " + name + " do you need something to eat ?")
+need = input("are you hungry? ")
+sleep(1)
+
+if need == ("yes"):
+    print1by1("well then i got some food for ya if so")
+elif need != ("yes"):
+    print1by1("well you sound fine and prolly should just get going")
+print("done")

@@ -27,7 +27,7 @@ WINNING_SCORE = 5
 #GAME OBJECTS
 class Paddle:
     COLOR = WHITE
-    VEL = 4
+    VEL = 5
 
     def __init__(self, x, y, width, height):
         self.x = self.original_x=  x
